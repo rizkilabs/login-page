@@ -5,7 +5,12 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
   background: #f1f5f9;
   min-height: 100vh;
   display: flex;
@@ -91,4 +96,39 @@ button:hover {
   text-align: center;
   color: #16a34a;
   font-weight: 600;
+}
+
+/* Tablet ke bawah */
+@media (max-width: 768px) {
+  form {
+    padding: 28px 24px;
+  }
+}
+
+/* HP */
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+    padding-top: 32px;
+  }
+
+  .login-container {
+    padding: 12px;
+  }
+
+  form {
+    padding: 24px 16px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  /* 16px mencegah iOS Safari zoom otomatis saat input difokus */
+  input,
+  button {
+    font-size: 16px;
+  }
 }
